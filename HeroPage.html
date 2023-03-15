@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Page</title>
+    <style>
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.63),
+            rgba(0, 0, 0, 0.608)
+          ),
+          url(hero.jpeg);
+        background-size: cover;
+        color: #fff;
+      }
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+      .header-container-inner {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 64px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      p {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #2b8a3e;
+        color: #fff;
+        text-decoration: none;
+        padding: 16px 32px;
+        display: inline-block;
+        border-radius: 9px;
+      }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+        padding: 96px 0;
+      }
+      section {
+        padding: 96px 0;
+        background-color: #f4fce3;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div></div>
+        <div></div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>Tranquil Mind :: A healthy way to heal yourself</h1>
+          <p>
+            Empowering you to take control of your health, any time , anywhere.
+          </p>
+          <a href="page1.html" class="btn">Let's Begin</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Sending healing vibes your way</h2>
+        <p>
+          Nurturing our mental health helps to prevent the development of mental
+          illness. Good mental health helps us to have a more positive outlook
+          and enjoy our lives more.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

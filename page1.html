@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Activity Tab</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Playfair Display", sans-serif;
+      }
+      div {
+        height: 380px;
+      }
+      .section-1,
+      .part1,
+      .part2,
+      .part3,
+      .part4 {
+        background-color: #f9f5f7;
+      }
+      nav {
+        font-size: 18px;
+        text-align: center;
+        background-color: #c8d5b9;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      nav a:link,
+      nav a:visited {
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+      }
+      h1 {
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 12px;
+      }
+
+      header {
+        width: auto;
+        height: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 48px;
+        margin-top: 12px;
+        background-color: #70a9a1;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+        background-image: url(header.jpg);
+        background-size: cover;
+        color: white;
+        column-gap: 50px;
+      }
+      header h1,
+      p {
+        grid-column: 1/2;
+      }
+      .header-icon {
+        width: 50px;
+        height: 50px;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        stroke: antiquewhite;
+        opacity: 0.35;
+      }
+
+      .section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 48px;
+        margin-bottom: -25px;
+        margin-top: -40px;
+      }
+      .p1 {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+      .p2 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .part1 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 32px;
+      }
+      .part1 img {
+        justify-self: center;
+        border-radius: 15px;
+      }
+
+      .part1 p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 5px;
+      }
+      .part1 a {
+        grid-column: 2/3;
+        text-decoration: none;
+      }
+      .q1 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .q2 {
+        align-self: end;
+        font-size: 15px;
+      }
+
+      .part2 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 32px;
+        column-gap: 90px;
+      }
+      .part2 img {
+        grid-column: 2/3;
+        grid-row: 2/-3;
+        border-radius: 15px;
+      }
+      .part2 a {
+        text-decoration: none;
+      }
+      .part2 p {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 5px;
+      }
+      .r1 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .r2 {
+        align-self: end;
+
+        font-size: 15px;
+      }
+      .part3 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 32px;
+      }
+      .part3 p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-bottom: 5px;
+      }
+      .part3 a {
+        grid-column: 2/3;
+        text-decoration: none;
+      }
+      .part3 img {
+        justify-self: center;
+        border-radius: 15px;
+      }
+      .s1 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .s2 {
+        align-self: end;
+        font-size: 15px;
+      }
+      .part4 {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 32px;
+        column-gap: 90px;
+      }
+      .part4 img {
+        grid-column: 2/3;
+        grid-row: 2/-3;
+        border-radius: 15px;
+      }
+      .part4 a {
+        text-decoration: none;
+      }
+      .part4 p {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 5px;
+      }
+      .t1 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .t2 {
+        align-self: end;
+
+        font-size: 15px;
+      }
+      .img2 {
+        width: 180px;
+        height: 180px;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        justify-self: center;
+        border-radius: 25%;
+      }
+      .q2,
+      .r2,
+      .s2,
+      .t2 {
+        margin-top: 10px;
+      }
+      .part1 a,
+      .part2 a,
+      .part3 a,
+      .part4 a {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Space for you to breathe.</h1>
+      <p>
+        Let's start with our first section based on the sense of touch. Complete
+        this series of games designed to calm you down.
+      </p>
+      <img src="calm.png" class="img2" />
+    </header>
+    <section>
+      <nav>
+        <a href="page2.html">Visual Tab</a>
+        <a href="page3.html">Audio Tab</a>
+        <a href="http://mindbenders78.pythonanywhere.com/">Comment Box</a>
+        <a href="doodle.html">Doodling Tab</a>
+      </nav>
+      <div class="section-1">
+        <p class="p1">THE SENSE OF TOUCH</p>
+        <p class="p2">We enable you to feel good.</p>
+        <p>________</p>
+      </div>
+      <div class="part1">
+        <img src="img1.jpeg" width="160px" height="160px" />
+        <p class="q1">Flying Game</p>
+        <p class="q2">
+          A new kind of flying square game that you can play with one hand. You
+          can control square by tapping it constantly runs forward. It is a
+          side-scrolling platform game where the player moves to the right to
+          reach at the end of each level.It is a simple and comforting game you
+          can play over and over again.
+        </p>
+        <a href="game1.html">Start Playing!</a>
+      </div>
+      <div class="part2">
+        <img src="img4.jpeg" width="160px" height="160px" />
+        <p class="r1">Tetris</p>
+        <p class="r2">
+          Tetris is a tile-matching puzzle game, developed in the Soviet Union
+          in 1984. The game has a simple goal of destroying lines of blocks
+          before it reaches the top. The line is made up of a square block. The
+          Tetrimino is the shape of the 4 connected blocks that fall down.
+        </p>
+        <a href="game2.html">Start Playing!</a>
+      </div>
+      <div class="part3">
+        <img src="img3.jpeg" width="160px" height="160px" />
+        <p class="s1">Snake Game</p>
+        <p class="s2">
+          In the game of Snake, the player uses the arrow keys to move a "snake"
+          around the board. As the snake finds food, it eats the food, and
+          thereby grows larger. The game ends when the snake either moves off
+          the screen or moves into itself. The goal is to make the snake as
+          large as possible before that happens
+        </p>
+        <a href="game3.html">Start Playing!</a>
+      </div>
+      <div class="part4">
+        <img src="img2.jpeg" width="160px" height="160px" />
+        <p class="t1">Bubble Pop</p>
+        <p class="t2">
+          Poping those bubbles in the most satisfying bubble wrap game! - Super
+          easy control - Simple , fun and Relaxing .Bubble wrap is so fun to
+          play with on its own. students can actually develop fine motor skills
+          by using their thumb and index finger to pop the bubbles.
+        </p>
+        <a href="game4.html">Start Playing!</a>
+      </div>
+    </section>
+  </body>
+</html>

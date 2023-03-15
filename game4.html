@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <style>
+      /* Style the bubble wrap */
+      #bubble-wrap {
+        width: 500px;
+        height: 500px;
+        border: 1px solid #d3d3d3;
+      }
+
+      /* Style the bubbles */
+      .bubble {
+        width: 50px;
+        height: 50px;
+        background-color: #46449c;
+        border-radius: 20px;
+        float: left;
+        margin: 2px;
+      }
+
+      /* Style the popped bubbles */
+      .popped {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create the bubble wrap -->
+    <div id="bubble-wrap">
+      <!-- Create the bubbles -->
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+
+      <!-- ... more bubbles -->
+    </div>
+
+    <!-- Add JavaScript to pop the bubbles -->
+    <script>
+      // Get all the bubbles
+      var bubbles = document.querySelectorAll(".bubble");
+
+      // Add a click event to each bubble
+      bubbles.forEach(function (bubble) {
+        bubble.addEventListener("click", popBubble);
+      });
+
+      // The popBubble function
+      function popBubble() {
+        // Add the "popped" class to the bubble to change its color
+        this.classList.add("popped");
+      }
+    </script>
+  </body>
+</html>

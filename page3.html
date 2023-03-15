@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Audio Tab</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .audio1{
+      margin-top:10px;
+    }
+    div{
+      padding: 10px;
+    }
+    header {
+      width: auto;
+      height: 250px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 48px;
+      margin-top: 12px;
+      background-color: #70a9a1;
+      border-top-left-radius: 15%;
+      border-top-right-radius: 15%;
+      background-image: url(header.jpg);
+      background-size: cover;
+      color: white;
+      column-gap: 50px;
+    }
+    header p {
+      color: white;
+    }
+    header h1,
+    p {
+      grid-column: 1/2;
+    }
+    nav {
+      font-size: 18px;
+      width: 800px;
+      text-align: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    nav a:link,
+    nav a:visited {
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+    }
+    body {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Playfair Display", sans-serif;
+    }
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 12px;
+    }
+    .header-icon {
+      width: 50px;
+      height: 50px;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      justify-self: center;
+      align-self: center;
+      stroke: antiquewhite;
+      opacity: 0.35;
+    }
+    section {
+      background-color: #f9f5f7;
+      padding: 60px;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
+      gap: 35px;
+    }
+    
+  </style>
+  <body>
+    <header>
+      <h1>Where words leave off, music begins</h1>
+      <p>
+        This section makes use of your hearing sense. Sit back and let the music take you to another dimension.
+  
+      </p>
+    </header>
+    <section>
+      <nav>
+        <a href="page2.html">Visual Tab</a>
+        <a href="page1.html">Activities Tab</a>
+        <a href="http://mindbenders78.pythonanywhere.com/"">Comment Box</a>
+        <a href="doodle.html">Doodling Tab</a>
+      </nav>
+      <div class="audio1">
+        <h2>Ocean waves</h2>
+        
+        <p>Click on the play button to play a sound:</p>
+        
+        <audio controls>
+          <source src="ocean-wave-1.ogg" type="audio/ogg">
+          <source src="ocean-wave-1.mp3" type="audio/mpeg">
+          
+        </audio>
+      </div>
+        
+      <div class="audio2">
+        <h2>The audio element</h2>
+        
+        
+        <p>Click on the play button to play a sound:</p>
+        
+        <audio controls>
+          <source src="ogg1.ogg" type="audio/ogg">
+          <source src="mp31.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+    <div class="audio3">
+
+      <h1>The audio element</h1>
+      
+      <p>Click on the play button to play a sound:</p>
+      
+      <audio controls>
+        <source src="ogg2.ogg" type="audio/ogg">
+        <source src="mp32.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>  
+    <div class="audio4"> 
+
+      <h2>The audio element</h2>
+      
+      <p>Click on the play button to play a sound:</p>
+      
+      <audio controls>
+        <source src="ogg3.ogg" type="audio/ogg">
+        <source src="mp33.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="audio5">
+
+      <h2>The audio element</h2>
+      
+      <p>Click on the play button to play a sound:</p>
+      
+      <audio controls>
+        <source src="ogg3.ogg" type="audio/ogg">
+        <source src="mp33.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+      
+    </section>
+  </body>
+</html>
